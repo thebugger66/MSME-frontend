@@ -20,7 +20,7 @@ function LoanForm() {
   const handleSubmit = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/apply-loan",
+        "https://msme-backend-5u5n.onrender.com/api/apply-loan",
         form
       );
       setResult(res.data);
